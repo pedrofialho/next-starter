@@ -1,6 +1,12 @@
 import Image from 'next/image'
+import { getFooBar } from '@/lib/utils/foo'
+
+export const dynamic = 'force-dynamic'
 
 export default function Home() {
+  const foobar = getFooBar()
+  console.log('foobar', { foobar })
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -38,6 +44,8 @@ export default function Home() {
           priority
         />
       </div>
+
+      <div>{JSON.stringify(foobar, null, 2)}</div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a

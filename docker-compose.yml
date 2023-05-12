@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nextjs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: nextjs
+    environment:
+      NEXT_FOO: ${NEXT_FOO}
+      NEXT_BAR: ${NEXT_BAR}
+    ports:
+      - '3000:3000'
