@@ -1,17 +1,40 @@
 # next-starter
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a _pretty opinionated_, batteries-included [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Features
+
+- [Typescript](https://www.typescriptlang.org), of course
+- [EditorConfig](https://editorconfig.org/) for cross-editor coding style consistency
+- [ESLint](https://eslint.org/) for static code analysis
+- [Prettier](https://prettier.io/) for code formatting
+- [Tailwind CSS](https://tailwindcss.com/) as CSS framework
+- [tailwind-merge](https://github.com/dcastil/tailwind-merge) for merging class lists and optimizing Tailwind styling
+- [zod](https://zod.dev) for schema validation/parsing
+- [axios](https://axios-http.com) as HTTP client
+- [React Query/TanStack Query](https://tanstack.com/query) for server state/asynchronous state management
+- [date-fns](https://date-fns.org) for date manipulation
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/en/download/) installed; you can also install it [via a package manager](https://nodejs.org/en/download/package-manager/) like [fnm](https://github.com/Schniz/fnm#readme). Check your installation in a terminal with:
+
+```bash
+node --version
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -19,6 +42,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Configuration
+
+The linter/formatter configuration is pretty great out of the box, but if needed it can be tailored to your needs with these configuration files:
+
+- `.editorconfig` - Customize core editor options like charset, EOL, indent type/size, etc. View [EditorConfig Properties](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties) for more info;
+- `.prettier.config.cjs` - Customize advanced formatting rules. View [Prettier Docs](https://prettier.io/docs/en/index.html) for more info.
+- `.eslintrc.cjs` - Customize static analysis rules. View [ESLint Rules](https://eslint.org/docs/rules/) for more info.
 
 ## Learn More
 
