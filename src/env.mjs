@@ -7,8 +7,8 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
-    NEXT_FOO: z.string().default(''),
-    NEXT_BAR: z.string().default(''),
+    FOO: z.string().default(''),
+    BAR: z.string().default(''),
     NODE_ENV: z.enum(['development', 'test', 'production']),
   },
 
@@ -26,8 +26,8 @@ export const env = createEnv({
    * middlewares) or client-side so we need to destruct manually.
    */
   runtimeEnv: {
-    NEXT_BAR: process.env.NEXT_BAR,
-    NEXT_FOO: process.env.NEXT_FOO,
+    BAR: process.env.BAR,
+    FOO: process.env.FOO,
     NODE_ENV: process.env.NODE_ENV,
     NEXT_PUBLIC_BAZ: process.env.NEXT_PUBLIC_BAZ,
   },

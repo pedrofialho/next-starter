@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: nextjs
     environment:
-      NEXT_FOO: ${NEXT_FOO}
-      NEXT_BAR: ${NEXT_BAR}
+      FOO: ${FOO}
+      BAR: ${BAR}
     ports:
       - '3000:3000'
