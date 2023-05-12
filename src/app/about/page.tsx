@@ -1,3 +1,4 @@
+import { env } from '@/env.mjs'
 import { getFooBar } from '@/lib/utils/foo'
 
 export const dynamic = 'force-dynamic'
@@ -10,6 +11,7 @@ export default async function About() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>{JSON.stringify(foobar, null, 2)}</div>
+      <div>{JSON.stringify({ baz: env.NEXT_PUBLIC_BAZ }, null, 2)}</div>
     </main>
   )
 }

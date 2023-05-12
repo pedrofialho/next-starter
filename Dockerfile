@@ -17,6 +17,9 @@ COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
+ARG NEXT_PUBLIC_BAZ
+ENV NEXT_PUBLIC_BAZ=${NEXT_PUBLIC_BAZ}
+
 RUN npm run build
 
 # Production image, copy all the files and run next
