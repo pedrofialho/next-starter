@@ -51,6 +51,14 @@ module.exports = {
             group: 'type',
             position: 'after',
           },
+          {
+            pattern: '@/*',
+            group: 'internal',
+          },
+          {
+            pattern: '@*/*',
+            group: 'external',
+          },
         ],
         pathGroupsExcludedImportTypes: ['react'],
       },
