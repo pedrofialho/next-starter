@@ -63,5 +63,16 @@ module.exports = {
         pathGroupsExcludedImportTypes: ['react'],
       },
     ],
+    'no-restricted-imports': [
+      'error',
+      {
+        name: 'clsx',
+        message: 'Use `cn` instead.',
+      },
+      {
+        name: 'tailwind-merge',
+        message: 'Use `cn` instead.',
+      },
+    ],
   },
 }
