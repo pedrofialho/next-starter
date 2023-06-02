@@ -65,3 +65,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Acknowledgements
+
+- `cn` helper from [shadcn/ui](https://github.com/shadcn/ui)
+- `env` helper, cjs/mjs configuration files from [T3 Stack](https://github.com/t3-oss/create-t3-app)
