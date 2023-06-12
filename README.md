@@ -15,6 +15,7 @@ This is a _pretty opinionated_, batteries-included [Next.js](https://nextjs.org/
 - [React Query/TanStack Query](https://tanstack.com/query) for server state/asynchronous state management
 - [date-fns](https://date-fns.org) for date manipulation
 - [T3 Env](https://env.t3.gg/docs/recipes) for environment variables
+- [Lucide](https://lucide.dev) for icons
 
 ## Getting Started
 
