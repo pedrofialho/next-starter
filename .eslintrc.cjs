@@ -7,6 +7,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'next/core-web-vitals',
+    'plugin:tailwindcss/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
