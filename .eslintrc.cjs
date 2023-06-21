@@ -14,6 +14,12 @@ module.exports = {
     project: './tsconfig.json',
   },
   plugins: ['@typescript-eslint'],
+  settings: {
+    tailwindcss: {
+      callees: ['cn'],
+      config: 'tailwind.config.cjs',
+    },
+  },
   rules: {
     'no-duplicate-imports': 'warn',
     '@typescript-eslint/consistent-type-imports': [
