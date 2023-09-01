@@ -45,6 +45,12 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## VS Code Extensions and Settings
+
+You can browse and enable recommended extensions for VS Code with the `Extensions: Show Recommended Extensions` command.
+
+Copy `.vscode/settings.recommended.json` to `.vscode/settings.json` to use recommended optimal settings like format/lint on save and other niceties.
+
 ## Configuration
 
 The linter/formatter configuration is pretty great out of the box, but if needed it can be tailored to your needs with these configuration files:
