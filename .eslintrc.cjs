@@ -23,6 +23,7 @@ module.exports = {
   },
   rules: {
     'no-duplicate-imports': 'warn',
+    '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       {
