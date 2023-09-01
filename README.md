@@ -47,6 +47,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## VS Code Extensions and Settings
 
+This template includes extensions and settings recommendations to enhance the development experience with VS Code.
+
 You can browse and enable recommended extensions for VS Code with the `Extensions: Show Recommended Extensions` command.
 
 Copy `.vscode/settings.recommended.json` to `.vscode/settings.json` to use recommended optimal settings like format/lint on save and other niceties.
