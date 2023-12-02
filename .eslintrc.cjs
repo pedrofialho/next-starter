@@ -10,10 +10,6 @@ module.exports = {
     'plugin:tailwindcss/recommended',
     'prettier',
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: './tsconfig.json',
-  },
   plugins: ['@typescript-eslint'],
   settings: {
     tailwindcss: {
