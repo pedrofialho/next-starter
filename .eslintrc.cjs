@@ -14,7 +14,7 @@ module.exports = {
   settings: {
     tailwindcss: {
       callees: ['cn'],
-      config: 'tailwind.config.cjs',
+      config: 'tailwind.config.ts',
     },
   },
   rules: {
