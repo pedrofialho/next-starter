@@ -11,8 +11,6 @@ This is a _pretty opinionated_, batteries-included [Next.js](https://nextjs.org/
 - [Tailwind CSS](https://tailwindcss.com/) as CSS framework
 - [tailwind-merge](https://github.com/dcastil/tailwind-merge) for merging class lists and optimizing Tailwind styling
 - [zod](https://zod.dev) for schema validation/parsing
-- [axios](https://axios-http.com) as HTTP client
-- [React Query/TanStack Query](https://tanstack.com/query) for server state/asynchronous state management
 - [date-fns](https://date-fns.org) for date manipulation
 - [T3 Env](https://env.t3.gg/docs/recipes) for environment variables
 - [Lucide](https://lucide.dev) for icons
@@ -61,7 +59,13 @@ The linter/formatter configuration is pretty great out of the box, but if needed
 - `.prettier.config.cjs` - Customize advanced formatting rules. View [Prettier Docs](https://prettier.io/docs/en/index.html) for more info.
 - `.eslintrc.cjs` - Customize static analysis rules. View [ESLint Rules](https://eslint.org/docs/rules/) for more info.
 
-## Learn More
+## Next Steps
+
+This project doesn't include many great libraries that _could_ be useful for certain projects with specific needs. Also some things are trivial to install/configure and the goal here is not to save people from a 5-minute installation guide. That said, here's a list of recommendations for expanding this setup:
+
+- [React Query/TanStack Query](https://tanstack.com/query) is great for server state/asynchronous state management. Check their [Advanced Server Rendering](https://tanstack.com/query/latest/docs/react/guides/advanced-ssr) guide to learn more about whether it's a good fit for what you're building. Also don't miss out on their [ESLint plugin](https://tanstack.com/query/v4/docs/react/eslint/eslint-plugin-query)!
+
+## Learn More about Next.js
 
 To learn more about Next.js, take a look at the following resources:
 
