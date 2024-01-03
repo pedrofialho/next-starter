@@ -1,6 +1,6 @@
 import { forwardRef, type ButtonHTMLAttributes } from 'react'
 import { cva, type VariantProps } from 'cva'
-import { cn } from '@/lib/utils'
+import { cn } from '~/lib/utils'
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: VariantProps<typeof buttonVariants>
