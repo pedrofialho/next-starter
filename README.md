@@ -1,13 +1,13 @@
 # next-starter
 
-This is a _pretty opinionated_, batteries-included [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a _pretty opinionated_, some-batteries-included [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Features
 
 - [Typescript](https://www.typescriptlang.org), of course
 - [EditorConfig](https://editorconfig.org/) for cross-editor coding style consistency
-- [ESLint](https://eslint.org/) for static code analysis
 - [Prettier](https://prettier.io/) for code formatting
+- [ESLint](https://eslint.org/) for code quality
 - [Tailwind CSS](https://tailwindcss.com/) as CSS framework
 - [tailwind-merge](https://github.com/dcastil/tailwind-merge) for merging class lists and optimizing Tailwind styling
 - [zod](https://zod.dev) for schema validation/parsing
