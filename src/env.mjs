@@ -7,7 +7,11 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
-    DATABASE_URL: z.string().url(),
+    /**
+     * Example of a validated environment variable.
+     * Ideally, this should be required we'll make it optional for the sake of the example.
+     */
+    DATABASE_URL: z.string().url().optional(),
     NODE_ENV: z.enum(['development', 'test', 'production']),
   },
 
