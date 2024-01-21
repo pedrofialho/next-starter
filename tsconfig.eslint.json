@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["@types/node"],
+    "noEmit": true,
+    "allowJs": true
+  },
+  "include": [
+    ".eslintrc.cjs",
+    "next.config.mjs",
+    "postcss.config.cjs",
+    "prettier.config.cjs"
+  ]
+}

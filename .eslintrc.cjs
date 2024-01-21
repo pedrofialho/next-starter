@@ -17,6 +17,9 @@ module.exports = {
       config: 'tailwind.config.ts',
     },
   },
+  parserOptions: {
+    project: ['./tsconfig.eslint.json', './tsconfig.json'],
+  },
   rules: {
     'no-duplicate-imports': 'warn',
     'tailwindcss/classnames-order': 'off',
