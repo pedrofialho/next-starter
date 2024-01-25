@@ -5,6 +5,10 @@
 await import('./src/env.mjs')
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  eslint: {
+    ...(process.env.SKIP_LINTING ? { ignoreDuringBuilds: true } : {}),
+  },
+}
 
 export default nextConfig

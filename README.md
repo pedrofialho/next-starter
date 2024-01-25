@@ -80,6 +80,16 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## Build options
+
+### Skip lint/type-checking
+
+It is possible to run `build` with `SKIP_LINTING` to bypass linting and type checks. It is useful to save compilation time when the code has already been checked by a previous step.
+
+### Skip environment validation
+
+Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful for Docker builds.
+
 ## Acknowledgements
 
 - `cn` helper from [shadcn/ui](https://github.com/shadcn/ui)
