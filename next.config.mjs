@@ -9,6 +9,9 @@ const nextConfig = {
   eslint: {
     ...(process.env.SKIP_LINTING ? { ignoreDuringBuilds: true } : {}),
   },
+  typescript: {
+    ...(process.env.SKIP_TYPE_CHECKING ? { ignoreBuildErrors: true } : {}),
+  },
 }
 
 export default nextConfig

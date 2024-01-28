@@ -84,7 +84,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Skip lint/type-checking
 
-It is possible to run `build` with `SKIP_LINTING` to bypass linting and type checks. It is useful to save compilation time when the code has already been checked by a previous step.
+It is possible to run `build` with `SKIP_LINTING` and/or `SKIP_TYPE_CHECKING` to bypass linting and type checks. It can be useful to save compilation time when the code has already been checked by a previous step.
 
 ### Skip environment validation
 
