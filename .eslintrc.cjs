@@ -34,21 +34,20 @@ module.exports = {
     'import/order': [
       'error',
       {
+        'newlines-between': 'always',
+        distinctGroup: false,
         alphabetize: {
           order: 'asc',
           caseInsensitive: true,
         },
         groups: [
-          'builtin',
-          'external',
+          ['builtin', 'external'],
           'internal',
           'parent',
           'sibling',
           'index',
           'object',
-          'type',
         ],
-        'newlines-between': 'ignore',
         pathGroups: [
           {
             pattern: 'react',
@@ -57,11 +56,11 @@ module.exports = {
           },
           {
             pattern: 'next/font/*',
-            group: 'type',
+            group: 'object',
             position: 'after',
           },
           {
-            pattern: '@/*',
+            pattern: '~/*',
             group: 'internal',
           },
           {
