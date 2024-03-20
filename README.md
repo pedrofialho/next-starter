@@ -19,22 +19,22 @@ This is a _pretty opinionated_, some-batteries-included [Next.js](https://nextjs
 
 ### Prerequisites
 
-Make sure you have [Node.js](https://nodejs.org/en/download/) installed; you can also install it [via a package manager](https://nodejs.org/en/download/package-manager/) like [fnm](https://github.com/Schniz/fnm#readme). Check your installation in a terminal with:
+You'll need [pnpm](https://pnpm.io) to install packages and run the project. Follow [the installation instructions](https://pnpm.io/installation) and check your installation in a terminal with:
 
-```bash
-node --version
+```sh
+pnpm --version
 ```
 
 ### Install dependencies
 
-```bash
-npm install
+```sh
+pnpm install
 ```
 
 ### Run the development server
 
-```bash
-npm run dev
+```sh
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
