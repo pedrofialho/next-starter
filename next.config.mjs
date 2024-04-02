@@ -6,11 +6,12 @@ await import('./src/env.mjs')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  ...(process.env.NEXT_DOCKER && { output: 'standalone' }),
   eslint: {
-    ...(process.env.SKIP_LINTING ? { ignoreDuringBuilds: true } : {}),
+    ...(process.env.SKIP_LINTING && { ignoreDuringBuilds: true }),
   },
   typescript: {
-    ...(process.env.SKIP_TYPE_CHECKING ? { ignoreBuildErrors: true } : {}),
+    ...(process.env.SKIP_TYPE_CHECKING && { ignoreBuildErrors: true }),
   },
 }
 

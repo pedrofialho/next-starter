@@ -1,0 +1,16 @@
+services:
+  nextjs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        # Pass build-time variables here
+        - NEXT_PUBLIC_BAZ
+        # Initialize runtime variables during build-time
+        - DATABASE_URL=${DATABASE_URL:-db://placeholder}
+    image: nextjs
+    environment:
+      # Pass runtime variables here
+      - DATABASE_URL
+    ports:
+      - '3000:3000'
