@@ -3,34 +3,51 @@ module.exports = {
   root: true,
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
-    'plugin:import/typescript',
     'next/core-web-vitals',
     'plugin:tailwindcss/recommended',
     'prettier',
   ],
-  plugins: ['@typescript-eslint'],
-  settings: {
-    tailwindcss: {
-      callees: ['cn', 'cva'],
-      config: 'tailwind.config.ts',
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
+        'next/core-web-vitals',
+        'plugin:tailwindcss/recommended',
+        'prettier',
+      ],
+      parserOptions: {
+        project: ['./tsconfig.json', './tsconfig.eslint.json'],
+      },
+      plugins: ['@typescript-eslint'],
+      settings: {
+        tailwindcss: {
+          callees: ['cn', 'cva'],
+          config: 'tailwind.config.ts',
+        },
+      },
+      rules: {
+        '@typescript-eslint/consistent-type-definitions': 'off',
+        '@typescript-eslint/consistent-type-imports': [
+          'warn',
+          {
+            fixStyle: 'inline-type-imports',
+          },
+        ],
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          { argsIgnorePattern: '^_' },
+        ],
+      },
     },
-  },
-  parserOptions: {
-    project: ['./tsconfig.eslint.json', './tsconfig.json'],
-  },
+  ],
   rules: {
     'no-duplicate-imports': 'warn',
     'tailwindcss/classnames-order': 'off',
-    '@typescript-eslint/consistent-type-definitions': 'off',
-    '@typescript-eslint/consistent-type-imports': [
-      'warn',
-      {
-        fixStyle: 'inline-type-imports',
-      },
-    ],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'import/order': [
       'error',
       {
