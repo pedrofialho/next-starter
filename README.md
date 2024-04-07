@@ -50,7 +50,7 @@ This template includes extensions and settings recommendations to enhance the de
 
 You can browse and enable recommended extensions for VS Code with the `Extensions: Show Recommended Extensions` command.
 
-Copy `.vscode/settings.recommended.json` to `.vscode/settings.json` to use recommended optimal settings like format/lint on save and other niceties.
+Run `pnpm settings` to use recommended optimal settings like format/lint on save and other niceties.
 
 ## Configuration
 

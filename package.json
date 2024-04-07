@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "settings": "shx cp docs/settings.json .vscode/settings.json",
     "lint": "next lint",
     "format": "prettier -w ."
   },
@@ -38,6 +39,7 @@
     "eslint-plugin-tailwindcss": "^3.13.0",
     "postcss": "^8",
     "prettier-plugin-tailwindcss": "^0.5.7",
+    "shx": "^0.3.4",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
