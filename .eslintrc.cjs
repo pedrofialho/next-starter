@@ -6,6 +6,7 @@ module.exports = {
     'plugin:import/recommended',
     'next/core-web-vitals',
     'plugin:tailwindcss/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
     'prettier',
   ],
   overrides: [

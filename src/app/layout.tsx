@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { cn } from '~/lib/utils/ui'
 
 import './globals.css'
+import { Providers } from './providers'
+
 import { Inter } from 'next/font/google'
 
 const inter = Inter({
@@ -28,7 +30,7 @@ export default function RootLayout({
           inter.variable,
         )}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
