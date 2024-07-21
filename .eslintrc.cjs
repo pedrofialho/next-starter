@@ -40,14 +40,7 @@ module.exports = {
           order: 'asc',
           caseInsensitive: true,
         },
-        groups: [
-          ['builtin', 'external'],
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-          'object',
-        ],
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
         pathGroups: [
           {
             pattern: 'react',
@@ -55,17 +48,19 @@ module.exports = {
             position: 'before',
           },
           {
-            pattern: 'next/font/*',
-            group: 'object',
-            position: 'after',
+            pattern: 'next',
+            group: 'builtin',
+            position: 'before',
           },
           {
-            pattern: '~/*',
+            pattern: 'next/**',
+            group: 'builtin',
+            position: 'before',
+          },
+          {
+            pattern: '~/**',
             group: 'internal',
-          },
-          {
-            pattern: '@*/*',
-            group: 'external',
+            position: 'after',
           },
         ],
         pathGroupsExcludedImportTypes: ['react'],
