@@ -8,7 +8,7 @@
     "start": "next start",
     "settings": "shx cp docs/settings.json .vscode/settings.json",
     "lint": "next lint",
-    "format": "prettier -w ."
+    "format": "prettier --cache --write ."
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
