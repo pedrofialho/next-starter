@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google'
 
 import { cn } from '~/lib/utils/ui'
 
-import { Providers } from './providers'
+import { ClientProviders } from './client-providers'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,7 +30,7 @@ export default function RootLayout({
           inter.variable,
         )}
       >
-        <Providers>{children}</Providers>
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   )
