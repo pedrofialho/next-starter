@@ -36,3 +36,6 @@ next-env.d.ts
 
 # vs code local settings
 .vscode/settings.json
+
+# zed local settings
+.zed/settings.json
